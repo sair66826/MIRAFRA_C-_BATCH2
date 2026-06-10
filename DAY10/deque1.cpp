@@ -43,9 +43,9 @@ class deque
                   int news=(table_size/2);//news= newstart
                   for(int i=0;i<table_size*2;i++)
                     newblocktab[i]=nullptr;
-                   int j=news+start_block;//j=4;and start_block=2
+                   int new_start_block=news+start_block;//j=4;and start_block=2
                   for(int i=start_block;i<=end_block;i++)
-                   {    newblocktab[j++]=block_table[i];
+                   {    newblocktab[new_start_block++]=block_table[i];
                    }
                    delete []block_table;
                     block_table=newblocktab;
