@@ -49,9 +49,8 @@ class deque
                    }
                    delete []block_table;
                     block_table=newblocktab;
-                    int d=end_block-start_block;
-                   start_block=start_block+(table_size/2);
-                   end_block=start_block+d;
+                   start_block=start_block+news;
+                   end_block=end_block+news;
                    table_size=table_size*2;
                  }
                    
